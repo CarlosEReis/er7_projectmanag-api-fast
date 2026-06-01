@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: project-manag-api
+  jpa.hibernate.ddl-auto: update
+
+kind: Application
