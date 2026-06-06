@@ -2,5 +2,8 @@ spring:
   application:
     name: project-manag-api
   jpa.hibernate.ddl-auto: update
+  jpa.defer-datasource-initialization: true
+  sql.init.mode: always
+
 
 kind: Application
