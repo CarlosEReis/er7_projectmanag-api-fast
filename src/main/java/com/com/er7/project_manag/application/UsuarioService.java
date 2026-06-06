@@ -43,7 +43,7 @@ public class UsuarioService {
     @Transactional
     public UsuarioResponse atualizar(UUID uuid, UsuarioRequest usuarioRequest) {
         var usuario = buscarOuFalhar(uuid);
-        BeanUtils.copyProperties(usuarioRequest, usuario, "id");
+        BeanUtils.copyProperties(usuarioRequest, usuario, "id", "publicId");
         return UsuarioMapper.toResponse(usuario);
     }
 
